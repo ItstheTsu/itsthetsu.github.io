@@ -26,6 +26,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 1000;
 }
 
 .header-left,
