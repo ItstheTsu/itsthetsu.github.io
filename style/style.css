@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000 !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.55);
+}
+
+.header-left,
+.header-mid,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-midias a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.social-midias a a:last-child {
+  margin-right: 0 !important;
+}
+.social-midias a :hover {
+  transition: all 0.3s ease;
+  scale: 1.05;
+  color: #777 !important;
+}
+
+.social-midias a:hover {
+  color: #1da1f2;
+}
+
+.header-mid {
+  flex: 1;
+  justify-content: center;
+}
+
+.header-mid a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-mid a:hover {
+  color: #1da1f2;
+}
+
+.logo-mid img {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.download-cv a {
+  color: white;
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.download-cv a:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.main {
+  padding: 50px 20px;
+}
+
+/* About Section */
+.about-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.box-title h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.box-description p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Experience Section */
+.experience-main {
+  margin-top: 50px;
+}
+
+.experience-top {
+  text-align: center;
+}
+
+.experience-top h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.experience-top .experience-resume {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.experience-box {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-box-title h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.experience-box-description p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Technologies Section */
+.tecnologies-main {
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tecnologies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teconologies-box {
+  margin: 10px;
+}
+
+.tecnologies-img img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.tecnologies-img img:hover {
+  opacity: 0.7;
+}
+
+/* Contact Section */
+.contact-main {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.contact-resume {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contact-email,
+.contact-whatsapp {
+  margin-top: 20px;
+}
+
+.contact-email a,
+.contact-whatsapp a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-email a:hover,
+.contact-whatsapp a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */
