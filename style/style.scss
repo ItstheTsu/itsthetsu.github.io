@@ -70,37 +70,45 @@ body {
 .download-cv a {
   color: white;
   text-decoration: none;
-  background-color: #007bff;
   padding: 8px 15px;
   border-radius: 5px;
-}
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 
-.download-cv a:hover {
-  background-color: #0056b3;
+  &:hover {
+    transition: all 0.3s ease;
+    font-size: 16.5px;
+  }
 }
 
 /* Main Content */
 .main {
-  padding-top: 16vh !important;
+  padding-top: 20vh !important;
   text-align: center;
+  padding: 0 5rem;
 
   .about-title {
     font-size: 38px;
-    margin-bottom: 25px;
+    margin-bottom: -10vh;
   }
 }
 
 /* About Section */
 .about-main {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
   border-radius: 8px;
+  margin-inline: 1rem;
   padding: 30px 45px;
   width: 350px;
+  height: 65vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -130,6 +138,11 @@ body {
 /* Experience Section */
 .experience-main {
   margin-top: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .experience-top {
@@ -149,7 +162,7 @@ body {
 
 .experience-box {
   background-color: #fff;
-  margin: 20px 0;
+  margin-top: 10rem;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -167,10 +180,14 @@ body {
 
 /* Technologies Section */
 .tecnologies-main {
-  margin-top: 50px;
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .tecnologies-container {
@@ -180,23 +197,25 @@ body {
 }
 
 .teconologies-box {
-  margin: 10px;
-}
-
-.tecnologies-img img {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-}
-
-.tecnologies-img img:hover {
-  opacity: 0.7;
+  margin-top: 10rem;
+  margin-inline: 1rem;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* Contact Section */
 .contact-main {
-  margin-top: 50px;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-title h1 {
@@ -229,7 +248,6 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
