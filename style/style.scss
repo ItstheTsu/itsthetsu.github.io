@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   color: #000 !important;
+  text-decoration: none;
+}
+
+html {
+  font-size: 77.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,14 +40,14 @@ body {
 .social-midias a {
   font-size: 2rem;
   margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
 
   a:last-child {
     margin-right: 0 !important;
   }
 
   :hover {
-    transition: all 0.3s ease;
-    scale: 1.05;
+    scale: 1.1;
     color: #777 !important;
   }
 }
@@ -67,38 +74,54 @@ body {
   margin-bottom: -8px;
 }
 
-.download-cv a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
+.download-cv {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0.7rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    transition: all 0.3s ease;
-    font-size: 16.5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    scale: 1.05;
   }
 }
 
-/* Main Content */
 .main {
-  padding-top: 20vh !important;
   text-align: center;
-  padding: 0 5rem;
+  padding: 8rem 0 0 0;
+}
+
+.banner {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 5rem 0 5rem;
+  background-color: #007bff;
 
   .about-title {
     font-size: 38px;
-    margin-bottom: -10vh;
+    margin-bottom: 3rem;
+    color: #fff !important;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.55);
   }
 }
-
-/* About Section */
-.about-main {
+.boxes {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -112,9 +135,16 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-out; 
+
+  &:hover {
+    scale: 1.05;
+    box-shadow: none;
+  }
 }
 
 .box img {
@@ -137,12 +167,13 @@ body {
 
 /* Experience Section */
 .experience-main {
-  margin-top: 50px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 15rem 0 15rem;
+  background-color: #341470;
 }
 
 .experience-top {
@@ -150,22 +181,36 @@ body {
 }
 
 .experience-top h1 {
-  font-size: 32px;
-  color: #333;
+  font-size: 38px;
+  color: #fff !important;
 }
 
-.experience-top .experience-resume {
+.experience-top h1 {
+  font-size: 32px;
+}
+
+.experience-top .experience-resume p {
   font-size: 18px;
   margin-top: 10px;
-  color: #555;
+  color: #fff !important;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .experience-box {
+  width: 50%;
+  height: 26vh;
   background-color: #fff;
   margin-top: 10rem;
-  padding: 15px;
+  padding: 1rem 3rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-inline: 1rem;
+  text-align: justify;
 }
 
 .experience-box-title h2 {
@@ -188,6 +233,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: rgb(53, 192, 226);
 }
 
 .tecnologies-container {
@@ -206,6 +252,10 @@ body {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+
+  .tecnologies-img {
+    padding: 0.3rem;
+  }
 }
 
 /* Contact Section */
@@ -246,10 +296,11 @@ body {
   color: #007bff;
 }
 
-/* Footer */
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 50px;
+  padding: 1rem;
 }
