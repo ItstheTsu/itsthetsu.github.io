@@ -1,6 +1,6 @@
 # Allan Correa - Portfolio Website
 
-# itsthetsu.github.io[itsthetsu.github.io]
+# [itsthetsu.github.io](https://itsthetsu.github.io/)
 
 Welcome to **my personal portfolio website**, where I showcase my web development projects, skills, and services. This website is built with **HTML, SCSS, and JavaScript** to provide a modern and responsive experience.
 
