@@ -10,6 +10,7 @@ body {
 }
 
 html {
+  font-size: 77.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -73,10 +74,11 @@ header .header-mid a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 header .header-mid a:hover {
-  color: #0077b5;
+  color: #dbdbdb;
+  scale: 1.03;
 }
 header .header-right .download-cv a {
   text-decoration: none;
@@ -84,11 +86,12 @@ header .header-right .download-cv a {
   background-color: #e0e0e0;
   padding: 8px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 header .header-right .download-cv a:hover {
-  background-color: #0077b5;
+  background-color: #54ca97;
   color: white;
+  scale: 1.05;
 }
 
 main {
@@ -127,7 +130,9 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .about-main .boxes .box:hover {
   transform: translateY(-10px);
@@ -145,15 +150,10 @@ main {
   color: #666;
   line-height: 1.5;
 }
-.about-main .boxes .box .img-cont {
-  width: 100%;
-  height: 80%;
-}
 .about-main .boxes .box img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 200px;
+  margin-bottom: 2rem;
 }
 
 .experience-main {
