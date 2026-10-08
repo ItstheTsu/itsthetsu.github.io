@@ -1,4 +1,182 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101a12"><meta name="description" content="Servidor da Tropinha Original — Minecraft Java 1.20.1 Forge. Baixe o pack e jogue com a tropinha."><title>Servidor da Tropinha Original | Minecraft</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%237bc34d' d='M4 8h56v17H4z'/%3E%3Cpath fill='%23825030' d='M4 25h56v35H4z'/%3E%3Cpath fill='%235d3d27' d='M14 35h12v12H14zm27 13h11v10H41z'/%3E%3C/svg%3E"><style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap');
-:root{--bg:#0c140e;--surface:#17231a;--line:#334838;--grass:#93d955;--text:#f0f8ee;--muted:#b1c2b2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px Inter,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid #d8ff9e;outline-offset:4px}.wrap{width:min(1150px,calc(100% - 40px));margin:auto}.pixel{font-family:'Press Start 2P',monospace;line-height:1.8}header{border-bottom:1px solid #ffffff18;background:#101b13f5;position:sticky;top:0;z-index:20;backdrop-filter:blur(18px)}.head{height:82px;display:flex;justify-content:space-between;align-items:center;gap:20px}.logo{display:flex;align-items:center;gap:13px;font-weight:900;font-size:14px;letter-spacing:.02em}.logo-mark{width:44px;height:44px;background:linear-gradient(#8ad955 0 32%,#7b4e2e 32%);box-shadow:inset -8px -8px #0003,4px 4px #0004;image-rendering:pixelated;flex-shrink:0}.logo small{display:block;color:var(--grass);font-size:10px;font-weight:800;margin-top:4px;letter-spacing:2px}.nav{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:700}.nav a:hover{color:var(--grass)}.chip{padding:9px 12px;border:1px solid #5c8651;background:#263b24;color:#b7ed99;font-size:11px;font-weight:800}.hero{min-height:640px;display:grid;grid-template-columns:1.4fr .6fr;gap:25px;align-items:center;position:relative}.scene{position:absolute;inset:0;pointer-events:none;z-index:-1;overflow:hidden;background:radial-gradient(ellipse at 70% 44%,#486b2855,transparent 47%),radial-gradient(ellipse at 20% 75%,#324b3344,transparent 55%)}.scene:after{content:'';position:absolute;inset:0;opacity:.17;background-image:linear-gradient(90deg,#ffffff13 1px,transparent 1px),linear-gradient(#ffffff13 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,transparent,#000 70%)}.eyebrow{font-size:10px;font-weight:900;letter-spacing:3px;color:#b4e89b;text-transform:uppercase}.hero h1{font-size:clamp(31px,4.6vw,65px);line-height:1.5;letter-spacing:-2px;margin:24px 0;text-shadow:5px 5px #050a06}.hero h1 span{color:var(--grass)}.hero p{max-width:630px;color:#c2d1bf;line-height:1.85;font-size:17px}.hero-actions,.action-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{border:2px solid #a6ef68;padding:16px 22px;font-size:12px;font-weight:900;letter-spacing:.6px;background:var(--grass);color:#15240c;box-shadow:0 5px #47792c;display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:#1b2a20;color:#f1f8ed;border-color:#526e50;box-shadow:0 5px #101c12}.world{height:320px;display:grid;place-items:center;perspective:650px}.block{width:200px;height:200px;position:relative;transform:rotate(-12deg);filter:drop-shadow(25px 30px 25px #0009)}.block:before{content:'';position:absolute;inset:0;background:linear-gradient(#87cf53 0 29%,#845530 29% 70%,#634126 70%);box-shadow:inset -25px 0 #0002,15px 15px #0005;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.block:after{content:'';position:absolute;top:25%;left:16%;width:16px;height:16px;background:#42682c;box-shadow:55px -25px #5ea03a,95px 5px #4e792e,20px 75px #4e321e,85px 107px #9b653d,130px 56px #4e321e}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:35px}.stat{border:1px solid #425d43;padding:11px 15px;background:#1a2b1dbb;font-size:12px;font-weight:800;color:#cce9c1}.stat b{color:var(--grass)}section.content{padding:83px 0}.kicker{color:var(--grass);font-weight:900;font-size:11px;letter-spacing:2px}.heading{font-size:clamp(23px,3.5vw,36px);letter-spacing:-1.5px;margin:17px 0 11px}.heading span{color:var(--grass)}.sub{line-height:1.8;color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.card{padding:28px;min-height:225px;background:linear-gradient(150deg,#1d3020,#15231a);border:1px solid #3c553f;box-shadow:6px 6px #080e0a}.card .num{font:16px 'Press Start 2P';color:var(--grass)}.card h3{font-size:18px;margin-top:28px}.card p{font-size:14px;line-height:1.75;color:var(--muted)}.feature{background:linear-gradient(120deg,#243b24,#162619);border:1px solid #597850;padding:36px;box-shadow:9px 9px #070b08}.feature-flex{display:flex;justify-content:space-between;align-items:center;gap:30px}.feature .heading{margin-top:14px}.feature p{line-height:1.8;color:#c2d0be;max-width:700px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tags span{border:1px solid #5a8e43;background:#31552b;color:#e1ffd3;padding:9px 11px;font-size:11px;font-weight:900}.feature-icon{font-size:100px;color:var(--grass);text-shadow:8px 8px #0e200f}.note{font-size:12px;color:#d7d6b0}.server{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding:30px;background:#15251a;border:1px solid #507548}.server strong{font-size:12px;letter-spacing:2px}.server-address{font-size:clamp(14px,2.4vw,22px);font-weight:900;color:var(--grass);overflow-wrap:anywhere;margin:15px 0}.server p{color:var(--muted);font-size:13px}.faq{margin-top:30px;display:grid;gap:10px}details{border:1px solid #344c37;background:#17251a;padding:19px 22px}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);line-height:1.8}footer{border-top:1px solid #324734;margin-top:60px;padding:30px 0;color:#9db39b;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:850px){.nav{display:none}.hero{grid-template-columns:1fr;min-height:630px;padding:70px 0}.world{position:absolute;right:0;top:75px;opacity:.17;z-index:-1}.grid{grid-template-columns:1fr}.card{min-height:180px}.feature-icon{display:none}.feature{padding:25px}}@media(max-width:440px){.logo{font-size:11px}.head{height:70px}.chip{display:none}.btn{width:100%}.hero h1{font-size:30px}.world{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
-</style></head><body><header><div class="head wrap"><a href="#inicio" class="logo"><span class="logo-mark" aria-hidden="true"></span><span>SERVIDOR DA TROPINHA<small>ORIGINAL • MINECRAFT</small></span></a><nav class="nav" aria-label="Navegação principal"><a href="#como-jogar">Como jogar</a><a href="#download">Download</a><a href="#servidor">Servidor</a></nav><span class="chip">JAVA • 1.20.1</span></div></header><main><div class="scene"></div><section class="hero wrap" id="inicio"><div><div class="eyebrow">✦ O mundo da tropinha te espera</div><h1>SERVIDOR DA<br><span>TROPINHA</span><br>ORIGINAL.</h1><p>Aquele mundo para minerar, explorar, construir e causar com os amigos. Prepare o Minecraft 1.20.1 com Forge, pegue nosso pacote e entre na aventura.</p><div class="hero-actions"><a class="btn" href="#download">⬇ BAIXAR PACOTE</a><a class="btn secondary" href="#servidor">◈ CONECTAR AO SERVIDOR</a></div><div class="stats"><span class="stat">▣ JAVA EDITION</span><span class="stat">⚙ FORGE</span><span class="stat">✦ <b>1.20.1</b></span></div></div><div class="world" aria-hidden="true"><div class="block"></div></div></section><section class="content wrap" id="como-jogar"><span class="kicker">[ TUTORIAL ]</span><h2 class="heading">TRÊS PASSOS PARA <span>JOGAR</span></h2><p class="sub">Tudo que você precisa saber para começar sua jornada com a tropinha.</p><div class="grid"><article class="card"><div class="num">01</div><h3>Prepare o jogo</h3><p>Tenha o Minecraft Java 1.20.1 e instale o Forge compatível com o pacote.</p></article><article class="card"><div class="num">02</div><h3>Baixe os arquivos</h3><p>Faça o download do pacote pelo Drive. Feche o jogo, faça backup da sua .minecraft e confira as pastas antes de importar os arquivos.</p></article><article class="card"><div class="num">03</div><h3>Entre no servidor</h3><p>Abra o perfil Forge do launcher, clique em Multiplayer e use nosso endereço de conexão.</p></article></div></section><section class="content wrap" id="download"><div class="feature feature-flex"><div><span class="kicker">[ DOWNLOAD DA TROPINHA ]</span><h2 class="heading">SEU PASSE PARA A <span>AVENTURA</span></h2><p>O pacote de mods e recursos está disponível no Google Drive. O instalador automático (.exe) ainda precisa de compilação e testes com o arquivo real; por enquanto, baixe o original.</p><div class="tags"><span>MINECRAFT 1.20.1</span><span>FORGE</span><span>WINDOWS / JAVA</span></div><div class="action-row"><a class="btn" href="https://drive.google.com/file/d/1jziOHSH7trP2h_E44Ur5FhEX8kZtr9r6/view?usp=sharing" target="_blank" rel="noopener noreferrer">⬇ ABRIR DOWNLOAD NO DRIVE</a></div><p class="note">A build exata do Forge não foi identificada. Não substitua toda a pasta .minecraft sem conferir o conteúdo e fazer backup.</p></div><div class="feature-icon" aria-hidden="true">▣</div></div></section><section class="content wrap" id="servidor"><span class="kicker">[ MULTIPLAYER ]</span><h2 class="heading">A TROPINHA TE <span>ESPERA</span></h2><p class="sub">Copie o IP abaixo e cole em Minecraft → Multiplayer → Adicionar servidor.</p><div class="server"><div><strong>ENDEREÇO DO SERVIDOR</strong><div class="server-address" id="ip">sp-05.blackhosting.com.br:25975</div><p>BlackHosting • Minecraft Java 1.20.1 • Forge</p></div><button type="button" class="btn" id="copy">COPIAR IP</button></div><div class="faq"><details><summary>Preciso instalar o Forge?</summary><p>Sim. Este servidor usa Minecraft Java 1.20.1 com Forge. A versão exata do Forge deve ser conferida com os arquivos do pacote.</p></details><details><summary>Posso usar uma instalação existente?</summary><p>Recomendamos criar um perfil separado no launcher e fazer backup dos mundos, mods e configurações antes de alterar os arquivos.</p></details><details><summary>O download já é um instalador automático?</summary><p>Ainda não. O botão abre o arquivo original no Drive. A versão .exe está pendente de compilação e validação.</p></details></div></section></main><footer><div class="wrap foot"><strong>SERVIDOR DA TROPINHA ORIGINAL</strong><span>Feito para jogar entre amigos. Não afiliado à Mojang ou Microsoft.</span></div></footer><script>document.getElementById('copy').addEventListener('click',async()=>{const el=document.getElementById('copy');try{await navigator.clipboard.writeText(document.getElementById('ip').textContent.trim());el.textContent='✓ IP COPIADO';setTimeout(()=>{el.textContent='COPIAR IP'},2300)}catch{el.textContent='SELECIONE O IP ACIMA'}})</script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a14">
+  <meta name="description" content="Servidor da Tropinha Original. Minecraft Java 1.20.1 com Forge. Baixe o pacote, confira o tutorial e entre no mundo dos amigos.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Servidor da Tropinha Original — Minecraft 1.20.1">
+  <meta property="og:description" content="A aventura é melhor com a tropinha. Baixe nosso pacote e jogue com os amigos!">
+  <meta property="og:image" content="https://images.ctfassets.net/8y6ykjruobr4/4TbGiwmx9qMD6gzC3z6Wc/a6bde24f3614bdba062ba080ed09431c/1_20_cherry1.jpg">
+  <title>Servidor da Tropinha Original | Minecraft 1.20.1 Forge</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%238ed34d' d='M3 7h58v22H3z'/%3E%3Cpath fill='%237c5131' d='M3 29h58v32H3z'/%3E%3Cpath fill='%234c8d30' d='M3 29h23v7H3zm34-7h12v11H37z'/%3E%3Cpath fill='%23563222' d='M12 39h15v11H12zm32 6h12v13H44z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.ctfassets.net">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/site.js" defer></script>
+</head>
+<body>
+  <div class="topline">SERVIDOR DA TROPINHA ORIGINAL <span>✦</span> MINECRAFT JAVA 1.20.1 + FORGE</div>
+  <header class="site-head">
+    <div class="shell head-inner">
+      <a href="#inicio" class="brand" aria-label="Servidor da Tropinha Original — início">
+        <span class="brand-cube" aria-hidden="true"></span>
+        <span class="brand-name"><strong>TROPINHA</strong><small>✦ ORIGINAL ✦</small></span>
+      </a>
+      <nav id="primary-menu" class="menu" aria-label="Navegação principal" data-open="false">
+        <a href="#inicio">Início</a>
+        <a href="#como-jogar">Como jogar</a>
+        <a href="#download">Download</a>
+        <a href="#servidor">Servidor</a>
+        <a href="#perguntas">Dúvidas</a>
+      </nav>
+      <button class="btn head-btn" type="button" data-copy-ip>⧉ COPIAR IP</button>
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-label="Abrir ou fechar menu" aria-controls="primary-menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="shell hero-main">
+        <div class="hero-stamp"><i aria-hidden="true"></i> Bem-vindo ao nosso mundo</div>
+        <h1 id="hero-title"><span class="smaller">SERVIDOR DA</span><span>TROPINHA</span>ORIGINAL.</h1>
+        <p class="hero-desc">A melhor parte de qualquer aventura é jogar junto. Reúna os amigos, prepare o modpack e venha explorar nosso mundo no <strong>Minecraft 1.20.1 com Forge</strong>.</p>
+        <div class="actions">
+          <a class="btn" href="#download"><span aria-hidden="true">⬇</span> BAIXAR O PACOTE</a>
+          <a class="btn btn-dark" href="#como-jogar"><span aria-hidden="true">➜</span> COMO COMEÇAR</a>
+        </div>
+        <div class="hero-pills">
+          <span><b>✦</b> JAVA EDITION</span>
+          <span><b>✦</b> VERSÃO 1.20.1</span>
+          <span><b>✦</b> FORGE</span>
+        </div>
+      </div>
+      <div class="float-card" aria-hidden="true">
+        <span class="pixel">✦ JOGUE COM OS AMIGOS</span>
+        <strong>O MUNDO É NOSSO.</strong>
+        <p>Construa histórias, não só blocos.</p>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Informações de compatibilidade">
+      <div class="ticker-inner"><span>MINECRAFT JAVA</span><span>VERSÃO 1.20.1</span><span>MOD LOADER FORGE</span><span>PACK PELO DRIVE</span></div>
+    </div>
+
+    <section class="section shell" id="como-jogar" aria-labelledby="join-title">
+      <div class="intro-head reveal">
+        <div>
+          <span class="eyebrow">PASSO A PASSO</span>
+          <h2 class="section-title" id="join-title">PRONTO PARA <span>JOGAR?</span></h2>
+        </div>
+        <p class="section-lead">Nada de procurar arquivo por arquivo. Aqui estão os três passos para preparar o jogo e se conectar à tropinha.</p>
+      </div>
+      <div class="join-grid">
+        <div class="photo-frame reveal">
+          <img src="https://ccdn.g-portal.com/medium_Blog_header_image_1920px_minecraft_kirsch_2bb242ea9e.png" alt="Paisagem ilustrativa com árvores de cerejeira em um mundo de Minecraft" loading="lazy" width="800" height="800">
+          <div class="photo-tag">SEU PRÓXIMO MUNDO TE ESPERA →</div>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step-no">01</div>
+            <div><h3>PREPARE O MINECRAFT</h3><p>Tenha o <strong>Minecraft Java 1.20.1</strong> instalado no computador. Instale também o <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html" target="_blank" rel="noopener noreferrer">Forge para 1.20.1</a> — a build exata deve ser compatível com os mods do pacote.</p></div>
+          </article>
+          <article class="step reveal">
+            <div class="step-no">02</div>
+            <div><h3>BAIXE O MODPACK</h3><p>Abra o arquivo compartilhado no Google Drive. Feche o jogo e faça backup da sua pasta <code>.minecraft</code> antes de importar mods ou configurações.</p></div>
+          </article>
+          <article class="step reveal">
+            <div class="step-no">03</div>
+            <div><h3>ENTRE NA TROPINHA</h3><p>Selecione o perfil Forge no launcher, abra <strong>Multiplayer</strong> e adicione o endereço do servidor. Pronto: é hora de jogar!</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="download" aria-labelledby="download-title">
+      <div class="shell">
+        <div class="download-wrap reveal">
+          <div class="download-body">
+            <span class="eyebrow">MODPACK DA TROPINHA</span>
+            <h2 class="download-headline" id="download-title">UM DOWNLOAD.<br><span>MUITAS AVENTURAS.</span></h2>
+            <p>Os arquivos necessários compartilhados pelo grupo estão reunidos no Drive. Use o mesmo pacote da galera para diminuir as chances de incompatibilidade entre os mods.</p>
+            <div class="tag-list" aria-label="Dados do pacote"><span>MINECRAFT 1.20.1</span><span>FORGE</span><span>ARQUIVO DO DRIVE</span></div>
+            <div class="actions">
+              <a class="btn" href="https://drive.google.com/file/d/1jziOHSH7trP2h_E44Ur5FhEX8kZtr9r6/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⬇</span> BAIXAR PACOTE NO DRIVE</a>
+              <a class="btn btn-outline" href="#como-jogar">VER INSTALAÇÃO ➜</a>
+            </div>
+            <p class="download-note"><strong>Importante:</strong> este botão abre o arquivo original do Drive. O instalador automático .exe ainda não foi compilado e validado. Não substitua toda a pasta .minecraft sem conferir os arquivos e fazer backup.</p>
+          </div>
+          <div class="download-art" aria-hidden="true"><div class="art-spark"></div><div class="pixel-chest"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="mundo" aria-labelledby="world-title">
+      <span class="eyebrow">INSPIRE-SE PARA A AVENTURA</span>
+      <h2 class="section-title" id="world-title">BLOCOS, BIOMAS <span>E HISTÓRIAS.</span></h2>
+      <p class="section-lead">Do nascer do sol à próxima construção maluca: cada sessão entre amigos pode virar uma história.</p>
+      <div class="world-grid">
+        <div class="world-card reveal">
+          <img src="https://images.ctfassets.net/8y6ykjruobr4/4TbGiwmx9qMD6gzC3z6Wc/a6bde24f3614bdba062ba080ed09431c/1_20_cherry1.jpg" alt="Bioma de cerejeiras no Minecraft 1.20, imagem ilustrativa" loading="lazy" width="1280" height="720">
+          <div class="world-label"><small>01 / EXPLORAR</small><strong>DESCUBRA NOVOS LUGARES</strong></div>
+        </div>
+        <div class="world-card reveal">
+          <img src="https://media.forgecdn.net/attachments/description/1093731/description_93deeadb-f00c-4091-9295-4d6c2106e53f.png" alt="Floresta e rio de um mundo de Minecraft com shaders, imagem ilustrativa" loading="lazy" width="900" height="900">
+          <div class="world-label"><small>02 / CONSTRUIR</small><strong>CRIE SEU CANTO</strong></div>
+        </div>
+        <div class="world-card reveal">
+          <img src="https://cdn.minecraftstorage.com/posts/e4e18dab-136f-4dfd-9361-1b55d3a09d3b/screenshots/5Ac0woORqU2JJ4BxeS5DIpVx6Mdtmww7USNgVpbb.webp" alt="Floresta de Minecraft com montanhas ao fundo e luz solar, imagem ilustrativa com shaders" loading="lazy" width="900" height="900">
+          <div class="world-label"><small>03 / JOGAR JUNTO</small><strong>VIVA A AVENTURA</strong></div>
+        </div>
+      </div>
+      <p class="gallery-note">Imagens ilustrativas de Minecraft e conteúdos da comunidade. Não são capturas do mapa real do Servidor da Tropinha Original e não representam necessariamente os mods incluídos no pacote.</p>
+    </section>
+
+    <section class="server-zone" id="servidor" aria-labelledby="server-title">
+      <div class="shell">
+        <span class="eyebrow">CONEXÃO DO SERVIDOR</span>
+        <h2 class="section-title" id="server-title">O PRÓXIMO BLOCO<br>É <span>ENTRAR NO JOGO.</span></h2>
+        <p class="section-lead">Minecraft → Multiplayer → Adicionar servidor. Copie o endereço, cole no jogo e entre para a tropinha.</p>
+        <div class="server-box reveal">
+          <div>
+            <strong>IP + PORTA DO SERVIDOR</strong>
+            <div class="server-ip" id="server-ip">sp-05.blackhosting.com.br:25975</div>
+            <p class="server-caption">Minecraft Java 1.20.1 • Forge • Hospedagem BlackHosting</p>
+          </div>
+          <button class="btn" type="button" data-copy-ip>⧉ COPIAR IP</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="perguntas" aria-labelledby="faq-title">
+      <div class="faq-grid">
+        <div><span class="eyebrow">AINDA TEM DÚVIDA?</span><h2 class="section-title" id="faq-title">PERGUNTAS <span>FREQUENTES.</span></h2><p class="section-lead">Tudo para evitar dor de cabeça antes de entrar no jogo.</p></div>
+        <div class="faq-stack">
+          <details><summary>Qual versão do Minecraft eu preciso usar?</summary><p>O servidor foi informado como <strong>Minecraft Java 1.20.1 com Forge</strong>. O Minecraft Bedrock não é a versão indicada para esse pacote.</p></details>
+          <details><summary>Onde baixo o Forge?</summary><p>Baixe apenas pelo <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html" target="_blank" rel="noopener noreferrer">site oficial do Forge</a>. A build exata ainda depende da validação do conteúdo do modpack.</p></details>
+          <details><summary>O botão já baixa um instalador .exe?</summary><p>Não. Por enquanto, o link abre o pacote original disponibilizado pelo Google Drive. O instalador automático está pendente de testes com o pacote real.</p></details>
+          <details><summary>Preciso apagar minha pasta .minecraft?</summary><p><strong>Não.</strong> Faça uma cópia de segurança e prefira criar um diretório/perfil separado para o modpack. Não apague mundos, screenshots e configurações pessoais.</p></details>
+          <details><summary>O servidor está online agora?</summary><p>Esta página é estática e não consulta o status em tempo real. Se não conectar, verifique se o servidor está ligado e se o modpack/Forge corresponde ao utilizado pelo grupo.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell">
+      <div class="foot-top">
+        <a href="#inicio" class="brand"><span class="brand-cube" aria-hidden="true"></span><span class="brand-name"><strong>TROPINHA</strong><small>✦ ORIGINAL ✦</small></span></a>
+        <p>Feito para facilitar a jogatina entre amigos. Bora construir histórias?</p>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 SERVIDOR DA TROPINHA ORIGINAL • PROJETO DA COMUNIDADE</span>
+        <span class="disclaimer">NOT AN OFFICIAL MINECRAFT SERVER. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</span>
+      </div>
+    </div>
+  </footer>
+  <div id="copy-announcement" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0"></div>
+</body>
+</html>
