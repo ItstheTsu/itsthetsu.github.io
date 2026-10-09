@@ -11,7 +11,6 @@ Site pessoal hospedado no GitHub Pages: **https://itsthetsu.github.io/**.
 - `favicon.svg`: marca simplificada
 - `img/`: imagens históricas preservadas
 - `blococraft/`: projeto do servidor Minecraft preservado
-- `vsm-landing/`: landing page demonstrativa e independente; **não é uma página oficial da VSM**
 
 ## Paleta
 
