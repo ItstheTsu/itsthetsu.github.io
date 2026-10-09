@@ -1,48 +1,37 @@
-# Portfólio pessoal — Allan Correa (Tsu)
+# Allan Correa (Tsu) — Portfólio
 
-Site pessoal hospedado no GitHub Pages: **https://itsthetsu.github.io/**.
+Site pessoal em HTML semântico, CSS e JavaScript, publicado no GitHub Pages em [itsthetsu.github.io](https://itsthetsu.github.io/).
 
-## Estrutura
+## Sobre esta atualização
 
-- `index.html`: conteúdo semântico (início, sobre, trajetória, projetos, tecnologias e contato)
-- `style/style.css`: estilos finais publicados
-- `style/style.scss`: fonte compatível com Sass mantida em sincronia com o CSS
-- `js/main.js`: menu responsivo, navegação ativa, filtros, animações e progresso de leitura
-- `favicon.svg`: marca simplificada
-- `img/`: imagens históricas preservadas
-- `blococraft/`: projeto do servidor Minecraft preservado
+- Perfil profissional atualizado para **Atendente Helpdesk de Suporte na VSM Informática**.
+- Experiência anterior no Grupo Mello Assis, graduação em Engenharia de Software (UNIFRAN) e curso técnico no SENAI.
+- Projetos com referências verificadas: MyList, NoteBlock e Servidor da Tropinha.
+- Laboratório identificado como estudos/protótipos, sem links ou funcionalidades inventadas.
+- UI de alto contraste com laranja, roxo, preto/off-white e detalhes em azul.
+- Menu mobile, âncoras, filtros acessíveis, botão de copiar e-mail, animações leves e `prefers-reduced-motion`.
+- Mockups SVG/CSS conceituais; **não** representam capturas nem dados de aplicativos reais.
 
-## Paleta
+## Execução local
 
-- Preto / azul noite: `#080911`, `#0d101c`
-- Roxo: `#ad84ff`, `#9d6cff`
-- Laranja: `#ff993f`, `#ff792e`
-- Azul claro: `#77c8ff`
-- Branco: `#f7f8ff`
+O site não requer compilação ou `npm install`. Abra `index.html` em um servidor estático, por exemplo:
 
-## Recursos
-
-- Estrutura fluida com Grid e Flexbox, sem seções fixas em 100vh
-- Navegação responsiva com abertura/fechamento por teclado
-- Seção de projetos com filtro por categoria
-- Preferência por movimento reduzido respeitada
-- Links externos seguros e elementos interativos acessíveis
-- Nenhuma dependência JavaScript obrigatória
-
-## Desenvolvimento local
-
-Na pasta raiz do repositório:
-
-```sh
+```bash
 python -m http.server 8000
 ```
 
-Abra `http://localhost:8000`.
+Depois acesse `http://localhost:8000/`.
 
-## Testes
+## Publicação
 
-Validar sintaxe JavaScript com `node --check js/main.js` e inspeção visual com um navegador local. O deploy é gerenciado pelo GitHub Pages no branch `main`.
+O GitHub Pages publica o conteúdo do diretório raiz da branch `main`. As pastas dos outros projetos no mesmo repositório não devem ser excluídas durante alterações no portfólio.
 
----
+## Estrutura
 
-© Allan Correa. Portfólio pessoal.
+- `index.html` — marcação e conteúdo.
+- `style/style.css` — CSS de produção.
+- `style/style.scss` — entrada Sass que carrega o CSS de produção sem duplicá-lo.
+- `js/main.js` — navegação, filtros, revelação leve e copiar e-mail.
+- `favicon.svg` — ícone original.
+
+Os links sociais e de contato são links diretos reais; não existe formulário falso ou coleta de dados neste site.
