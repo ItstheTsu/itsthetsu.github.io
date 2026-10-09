@@ -1,30 +1,49 @@
-# Allan Correa - Portfolio Website
+# Portfólio pessoal — Allan Correa (Tsu)
 
-# [itsthetsu.github.io](https://itsthetsu.github.io/)
+Site pessoal hospedado no GitHub Pages: **https://itsthetsu.github.io/**.
 
-Welcome to **my personal portfolio website**, where I showcase my web development projects, skills, and services. This website is built with **HTML, SCSS, and JavaScript** to provide a modern and responsive experience.
+## Estrutura
 
-## Features
-- **Modern & Responsive Design**: Ensures a seamless experience across all devices.
-- **Project Showcase**: Displays past work and case studies.
-- **Contact Section**: Clients can reach out via email or WhatsApp.
-- **Smooth Animations**: Enhances user experience with interactive elements.
+- `index.html`: conteúdo semântico (início, sobre, trajetória, projetos, tecnologias e contato)
+- `style/style.css`: estilos finais publicados
+- `style/style.scss`: fonte compatível com Sass mantida em sincronia com o CSS
+- `js/main.js`: menu responsivo, navegação ativa, filtros, animações e progresso de leitura
+- `favicon.svg`: marca simplificada
+- `img/`: imagens históricas preservadas
+- `blococraft/`: projeto do servidor Minecraft preservado
+- `vsm-landing/`: landing page demonstrativa e independente; **não é uma página oficial da VSM**
 
-## Tech Stack
-```plaintext
-Frontend: HTML, SCSS, JavaScript
+## Paleta
+
+- Preto / azul noite: `#080911`, `#0d101c`
+- Roxo: `#ad84ff`, `#9d6cff`
+- Laranja: `#ff993f`, `#ff792e`
+- Azul claro: `#77c8ff`
+- Branco: `#f7f8ff`
+
+## Recursos
+
+- Estrutura fluida com Grid e Flexbox, sem seções fixas em 100vh
+- Navegação responsiva com abertura/fechamento por teclado
+- Seção de projetos com filtro por categoria
+- Preferência por movimento reduzido respeitada
+- Links externos seguros e elementos interativos acessíveis
+- Nenhuma dependência JavaScript obrigatória
+
+## Desenvolvimento local
+
+Na pasta raiz do repositório:
+
+```sh
+python -m http.server 8000
 ```
 
-## Usage
-- Browse the portfolio to see past projects.
-- Contact via email or WhatsApp for inquiries.
-- Future updates may include a blog and more interactive elements.
+Abra `http://localhost:8000`.
 
-## Contributions
-This is a personal portfolio, and the source code is not available for cloning or distribution. However, feedback and suggestions are always welcome. Feel free to contact me directly.
+## Testes
 
-## License
-This project is protected, and its source code is not publicly available.
+Validar sintaxe JavaScript com `node --check js/main.js` e inspeção visual com um navegador local. O deploy é gerenciado pelo GitHub Pages no branch `main`.
 
 ---
-Made by [Allan Correa](https://itsthetsu.github.io/)
+
+© Allan Correa. Portfólio pessoal.
